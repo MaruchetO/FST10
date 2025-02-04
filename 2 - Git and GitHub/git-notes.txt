@@ -35,7 +35,7 @@ git log
 git log --oneline
 
 
-# Branching
+# Branching and Merging
 
 - Create a Branch
 git branch [branch-name]
@@ -46,3 +46,9 @@ git branch -a
 - Switch to a diffrent branch
 git switch [branch-name]
 git checkout [branch-name]
+
+- Merge a branch to the master branch
+git merge [branch-name]
+
+- Delete a branch
+git branch -d [branch-name]
