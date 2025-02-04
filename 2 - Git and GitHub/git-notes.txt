@@ -71,3 +71,6 @@ git push -u origin main
 
 - Push commits to the remote repository
 git push
+
+# New commit that undoes the changes introduced by the specified commit
+git revert [commit-hash]
