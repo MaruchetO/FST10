@@ -1,0 +1,42 @@
+/* Static */
+/* Elements follow the normal document flow */
+/* Top - Bottom */
+
+#relative {
+  /* relative to original position */
+  background-color: lightgreen;
+  color: red;
+  position: relative;
+  /* Access: top, left, bottom, right */
+  top: 20px;
+  left: 50px;
+}
+
+#absolute {
+  /* relative to the ancestor */
+  background-color: grey;
+  color: white;
+  position: absolute;
+  /* Access: top, left, bottom, right */
+  top: 0px;
+  right: 50px;
+}
+
+#fixed {
+  /* fixed to the display */
+  background-color: blue;
+  color: white;
+  position: fixed;
+  /* Access: top, left, bottom, right */
+  top: 0px;
+  right: 25px;
+}
+
+#sticky {
+  /* relative + fixed */
+  background-color: red;
+  color: white;
+  position: sticky;
+  /* Access: top, left, bottom, right */
+  top: 20px;
+}
