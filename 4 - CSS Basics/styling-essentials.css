@@ -1,0 +1,111 @@
+/* Default Font Style: Times New Roman */
+/* Default Font Size: 16px */
+#text-styling {
+  font-family: "Arial", sans-serif;
+
+  /* Font Weight */
+  font-weight: normal; /* Default */
+  font-weight: bold;
+  font-weight: bolder;
+  font-weight: light;
+  font-weight: lighter;
+
+  /* Font Weight - Numerical Values */
+  font-weight: 100;
+  font-weight: 200;
+  font-weight: 300;
+  font-weight: 400; /* Default */
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+  font-weight: 800;
+  font-weight: 900;
+  font-weight: 950;
+  font-weight: 400; /* Default */
+
+  /* Font Style */
+  font-style: normal; /* Default */
+  font-style: italic;
+  font-style: oblique;
+
+  /* Text-ALign */
+  text-align: left; /* Default */
+  text-align: right;
+  text-align: justify;
+  text-align: center;
+
+  /* Line Height */
+  line-height: normal; /* Default */
+  line-height: 1.5;
+  line-height: 50%;
+  line-height: 32px;
+
+  /* Letter Spacing */
+  letter-spacing: normal; /* Default */
+  letter-spacing: -4px;
+  letter-spacing: 4px;
+}
+
+#text-decoration {
+  /* Text Decoration Line */
+  text-decoration-line: none; /* Default */
+  text-decoration-line: line-through;
+  text-decoration-line: underline;
+  text-decoration-line: overline;
+
+  /* Text Decoration Style */
+  text-decoration-style: solid; /* Default */
+  text-decoration-style: dotted;
+  text-decoration-style: double;
+  text-decoration-style: dashed;
+  text-decoration-style: wavy;
+
+  /* Text Decoration Color */
+  text-decoration-color: red;
+
+  /* Text Decoration Thickness */
+  text-decoration-thickness: 5px;
+
+  /* Combine All Properties */
+  text-decoration: underline dotted blue 50%;
+  text-decoration: line-through double;
+}
+
+#colors {
+  /* Keyword / Color Names */
+  color: yellow;
+
+  /* RGB - Red, Green, Blue */
+    /* 0 - 255 */
+  /* RGBA - Red, Green, Blue, Alpha */
+    /* Alpha - Opacity */
+      /* 0 - 1 */
+  color: rgb(0, 0, 100);
+  background-color: rgba(0, 0, 255, 0.5);
+
+  /* Hexadecimal Values */
+  /* 0 - 9, A - F */
+    /* A - 10, B - 11, C - 12, D - 13, E - 14, F - 15 */
+  color: #00ff00;
+  background-color: #ff000077;
+
+}
+
+#absolute-unit-px {
+  font-size: 16px; /* Default */
+  font-size: 24px;
+}
+
+#relative-unit-em {
+  /* Relative to the font-size of the parent element */
+  /* Parent-child relation */
+  font-size: 1em; /* Default */
+  font-size: 2em;
+}
+
+#relative-unit-rem {
+  /* Relative to the font-size of the root element */
+  /* Root = HTML page */
+  font-size: 1rem; /* Default */
+  font-size: 2rem;
+}
