@@ -1,0 +1,90 @@
+// Document Object Moedel (DOM)
+// Allow us to use JS to change the style, content, and structure of our wecsite.
+
+// querySelector()
+// pass #id, .classname, tagname
+// Return: first element
+
+const elementWithID = document.querySelector("#first-div");
+// console.log(elementWithID);
+
+elementWithID.textContent = "Div 1";
+elementWithID.style.color = "Green";
+elementWithID.style.fontFamily = "Impact";
+
+const elementWithClass = document.querySelector(".sample-div");
+// console.log(elementWithClass);
+
+// querySelectorAll()
+// pass #id, .classname, tagname
+const elementsWithClass = document.querySelectorAll(".sample-div");
+// console.log(elementsWithClass);
+
+elementsWithClass[1].textContent = "Div 2";
+elementsWithClass[1].style.color = "#faf0ca";
+elementsWithClass[1].style.backgroundColor = "#0d3b66";
+
+const headings = document.querySelectorAll("h3");
+console.log(headings);
+
+headings.forEach(function (heading) {
+  heading.style.color = "#f4f1de";
+  heading.style.backgroundColor = "#e07a5f";
+  heading.style.textAlign = "center";
+});
+
+// .setAttribute()
+// Updating Element Attributes
+const dayNightIcon = document.querySelector("#day-night-icon");
+dayNightIcon.setAttribute(
+  "src",
+  "https://cdn-icons-png.flaticon.com/512/3688/3688129.png"
+);
+
+// .appendChild()
+// Appending New Element
+const parentElement = document.querySelector("#parent-element");
+const createdElement = document.createElement("div");
+createdElement.textContent = "Child Element";
+parentElement.appendChild(createdElement);
+
+// .remove()
+// Remove an element
+const elementeToBeRemoved = document.querySelector("#element-to-be-removed");
+elementeToBeRemoved.remove();
+
+// Adding Event Listeners and Manipulating Element Styles
+const darkModeBtn = document.querySelector("#dark-mode-btn");
+darkModeBtn.addEventListener("click", function () {
+  if (darkModeBtn.className == "") {
+    const pageContainer = document.querySelector("#page-container");
+    pageContainer.style.backgroundColor = "black";
+    pageContainer.style.color = "white";
+
+    const pageModeText = document.querySelector("#page-mode-text");
+    pageModeText.textContent = "Dark Mode";
+
+    const darkModeBtn = document.querySelector("#dark-mode-btn");
+    darkModeBtn.textContent = "Light Mode";
+
+    darkModeBtn.className = "dark";
+  } else {
+    const pageContainer = document.querySelector("#page-container");
+    pageContainer.style.backgroundColor = "white";
+    pageContainer.style.color = "black";
+
+    const pageModeText = document.querySelector("#page-mode-text");
+    pageModeText.textContent = "Light Mode";
+
+    const darkModeBtn = document.querySelector("#dark-mode-btn");
+    darkModeBtn.textContent = "Dark Mode";
+
+    darkModeBtn.className = "";
+  }
+});
+
+// Activity:
+// Modify this button so that, if you are currently in the lightmode.
+// When you click the button, you will change to Dark Mode.
+// But, if you are currently in the dark mode.
+// When you click the button, you will change back to Light Mode.
